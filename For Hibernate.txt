@@ -1,0 +1,34 @@
+User_Login_Using JavaEE/Hibernate
+--------------------------------------
+
+Sofware
+1) Eclisp IDE JEE
+2) MySQL Database 8.0.33
+
+Flow Chart
+---------------
+step 1: Open IDE
+step 2: src/main/resources inside create one folder (META-INF)
+step 3: Inside META-INF folder create file(persistence.xml)
+step 4: open pom.xml 
+step 5: Inside Pom.xml
+        <dependencies>
+	      <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j  MySQL (which version use you thats the version dependency add)-->
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<version>8.0.33</version>
+		</dependency>
+
+	     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core which version use you thats the version dependency -->
+	       <dependency>
+		       <groupId>org.hibernate</groupId>
+		       <artifactId>hibernate-core</artifactId>
+		       <version>5.6.14.Final</version>
+	       </dependency>
+	</dependencies>
+
+step 6: src/main/java Inside --> Project (hibernate_user) create Pacakge(User_DAO, User_DTO, User_Controller)
+step 7: Run User_Controller --> choice signUp --> Add detail --> logout(exist) --> run user controller --> choice login --> enter email & password --> logout 
+
+
